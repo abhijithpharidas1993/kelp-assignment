@@ -1,0 +1,36 @@
+.header{
+    background-color: #000;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    .brand{
+        padding: 0px 20px;
+        a {
+            color: #FFF;
+            font-size: 32px;
+            text-decoration: none;
+        }
+    }
+    .routes{
+        ul{
+            display: flex;
+            li{
+                padding: 0 10px;
+                list-style-type: none;
+                a{
+                    color: #FFF;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.content{
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    padding-top: 80px;
+}

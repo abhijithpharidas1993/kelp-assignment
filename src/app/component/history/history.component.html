@@ -1,0 +1,15 @@
+<div class="history">
+    <h1>Search History</h1>
+    <div class="button-pannel">
+        <button (click)="clearHistory()">Clear History</button>
+    </div>
+    <div class="history-result">
+        <div class="history-card" *ngFor="let user of userList" (click)= "seeUserInfo(user.login)">
+            
+            <div class="empty"></div>
+            <img [src]="user.avatar_url" alt="">
+            
+            <div class="info">{{user.login}}</div>
+        </div>
+    </div>
+</div>

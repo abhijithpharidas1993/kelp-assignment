@@ -1,0 +1,45 @@
+.profile{
+    .basic-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .avatar{
+            img {
+                height: 125px;
+                width: 125px;
+                border-radius: 62px;
+            }
+        }
+        .contact{
+            .profile-name {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .email{
+                color: gray;
+                font-style: italic;
+            }
+        }
+    }
+    .more-info{
+        .info-item{
+            display: flex;
+            padding: 10px; 
+            align-items: baseline;
+            .info-name{
+                padding: 10px;
+                flex-basis: 15%;
+            }
+            .info-value{
+                    flex-basis: 85%;
+                .info-availble{
+
+                }
+                .info-not-availble{
+                    color: gray;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.history{
+    .button-pannel{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0px 50px;
+        button{
+            color: #FFF;
+            background-color: indianred;
+            padding: 10px 15px;
+            border: 1px solid gainsboro;
+        }
+    }
+    .history-result{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: baseline;
+        padding: 20px;
+        .history-card{
+            height: 90px;
+            display: flex;
+            width: 23%;
+            position: relative;
+            margin: 5px 0;
+            padding: 0 5px;
+            .empty{
+                height: 90px;
+                width: 45px;
+            }
+            img{
+                height: 84px;
+                width: 84px;
+                border-radius: 45px;
+                position: absolute;
+                border: 3px solid gray;
+            }
+            .info{
+                border: 1px solid black;
+                flex-grow: 1;
+                padding-left: 50px;
+            }
+        }
+    }
+}

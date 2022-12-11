@@ -1,0 +1,16 @@
+<div class="search-page">
+    <div class="search-bar">
+        <input type="text" [(ngModel)]="search" name="search" />
+        <button (click)="searchUser()">search</button>
+    </div>
+    
+    <div class="search-result">
+        <div class="search-card" *ngFor="let user of userList" (click)= "seeUserInfo(user)">
+            
+            <div class="empty"></div>
+            <img [src]="user.avatar_url" alt="">
+            
+            <div class="info">{{user.login}}</div>
+        </div>
+    </div>
+</div>

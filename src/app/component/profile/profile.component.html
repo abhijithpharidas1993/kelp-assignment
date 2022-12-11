@@ -1,0 +1,52 @@
+<div class="profile" *ngIf="user">
+    <div class="basic-info">
+        <div class="avatar">
+            <img [src]="user.avatar_url" alt="">
+        </div>
+        <div class="contact">
+            <div class="profile-name">{{user.name}}</div>
+            <div class="email">{{user.email || '-'}}</div>
+        </div>
+
+    </div>
+
+    <div class="more-info">
+        <div class="info-item">
+            <div class="info-name">Bio</div>
+            <div class="info-value">
+                <span *ngIf="user.bio" class="info-availble">{{user.bio}}</span>
+                <span *ngIf="!user.bio" class="info-not-availble">No data available</span>
+
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-name">Company</div>
+            <div class="info-value">
+                <span *ngIf="user.company" class="info-availble">{{user.company}}</span>
+                <span *ngIf="!user.company" class="info-not-availble">No data available</span>
+
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-name">Blog</div>
+            <div class="info-value">
+                <span *ngIf="user.blog" class="info-availble">{{user.blog}}</span>
+                <span *ngIf="!user.blog" class="info-not-availble">No data available</span>
+
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-name">Location</div>
+            <div class="info-value">
+                <span *ngIf="user.location" class="info-availble">{{user.location}}</span>
+                <span *ngIf="!user.location" class="info-not-availble">No data available</span>
+
+            </div>
+        </div>
+
+    </div>
+     
+</div>
